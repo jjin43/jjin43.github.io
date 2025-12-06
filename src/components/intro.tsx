@@ -40,11 +40,12 @@ export const Intro = () => {
         animate={{ opacity: 1, y: 0 }}
         className="font-heading max-w-3xl text-4xl font-extrabold md:text-5xl"
       >
-        Hi I&#39;m a{' '}
+        Hello, I&#39;m{' '}
         <span className="bg-gradient-to-r from-rose-700 to-pink-600 bg-clip-text text-transparent">
-          Frontend
-        </span>{' '}
-        developer creating modern web apps.
+          Justin Jin
+        </span>
+        ,
+        <br className="hidden sm:block" />a full-stack developer.
       </motion.h1>
       <motion.p
         initial={{ opacity: 0, y: 100 }}
@@ -54,8 +55,8 @@ export const Intro = () => {
         }}
         className="text-muted-foreground max-w-xl"
       >
-        A frontend developer based in the Poland. I&#39;m passionate about
-        building modern web applications using Next.js, React, and Tailwind CSS.
+        I&#39;m passionate about building modern web applications, cloud
+        infrastrcture, and scalable systems.
       </motion.p>
       <motion.div
         initial={{ opacity: 0, y: 100 }}
@@ -67,7 +68,7 @@ export const Intro = () => {
       >
         <Button asChild size="lg">
           <Link href="#contact">
-            Get in touch <Icons.arrowRight className="ml-2 size-4" />
+            Hire Me! <Icons.arrowRight className="ml-2 size-4" />
           </Link>
         </Button>
         <Button variant="outline" size="lg" className="hidden sm:flex" asChild>

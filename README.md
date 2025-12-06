@@ -1,6 +1,10 @@
 # [jjin43.github.io](https://jjin43.github.io/)
 Personal Website - Justin Jin / jjin43
 
+## Modifications
+```\lib\site-config.ts``` contains personal site informations (title, keywords, etc).
+```\lib\data.ts``` contains data entries for projects and experiences.
+
 ## Installation 
 Download the project to your computer and install needed packages with command:
 

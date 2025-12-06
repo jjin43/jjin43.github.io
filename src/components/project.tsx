@@ -28,7 +28,7 @@ const fadeInAnimationVariants = {
 };
 
 export const Project = ({ project, index }: TProps) => {
-  const { image, title, description, technologies, links } = project;
+  const { image, title, description, technologies, link } = project;
 
   return (
     <motion.div
@@ -42,7 +42,7 @@ export const Project = ({ project, index }: TProps) => {
       className="flex flex-col rounded border p-5 md:w-1/2"
     >
       <Link
-        href={links.github}
+        href={link}
         aria-label={title}
         target="_blank"
         className="overflow-hidden rounded"

@@ -34,11 +34,7 @@ export const projectsData = [
     description:
       'A Next.js starter template, packed with features like TypeScript, Tailwind CSS, Next-auth, Eslint, Stripe, testing tools and more.',
     technologies: ['Next.js', 'Tailwind', 'Shadcn/ui', 'Next-auth', 'Prisma'],
-    links: {
-      preview: 'https://next-starter-skolaczk.vercel.app',
-      github: 'https://github.com/Skolaczk/next-starter',
-      githubApi: 'https://api.github.com/repos/Skolaczk/next-starter',
-    },
+    link: 'https://example.com',
   },
   {
     image: '/images/project-1.webp',
@@ -46,11 +42,7 @@ export const projectsData = [
     description:
       'SocialHub is a next-generation social media app developed using Next.js and Nest.js.',
     technologies: ['Next.js', 'TypeScript', ' Nest.js', 'Tailwind', 'Prisma'],
-    links: {
-      preview: 'https://socialhub-ms.vercel.app/',
-      github: 'https://github.com/Skolaczk/SocialHub',
-      githubApi: 'https://api.github.com/repos/Skolaczk/SocialHub',
-    },
+    link: 'https://example.com',
   },
 ] as const;
 
@@ -91,7 +83,7 @@ export const experiencesData = [
             buttonVariants({ variant: 'link' }),
             'm-0 h-fit p-0 text-base'
           )}
-          href="https://geoscan-app.com"
+          href="https://example.com"
           target="_blank"
         >
           geoscan-app.com

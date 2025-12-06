@@ -9,6 +9,7 @@ import {
   Github,
   Linkedin,
   LucideProps,
+  Mail,
   Moon,
   Star,
   Sun,
@@ -26,6 +27,7 @@ export const Icons = {
   star: Star,
   calendar: Calendar,
   building: Building2,
+  mail: Mail,
   audiophile: (props: LucideProps) => (
     <svg
       width="64"

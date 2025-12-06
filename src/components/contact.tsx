@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 
 import { Button } from '@/components/button';
+import { Icons } from '@/components/icons';
 import { SectionHeading } from '@/components/section-heading';
 import { useSectionInView } from '@/hooks/use-section-in-view';
 
@@ -30,21 +31,42 @@ export const Contact = () => {
     >
       <SectionHeading
         heading="Contact Me"
-        content={
-          <>
-            Please contact me directly at{' '}
-            <Button
-              variant="link"
-              className="text-muted-foreground hover:text-foreground h-fit p-0 font-medium underline transition-colors"
-              asChild
-            >
-              <Link href="mailto:justinjinaz@gmail.com">
-                justinjinaz@gmail.com
-              </Link>
-            </Button>
-          </>
-        }
+        content={<>Hire me today with through the following platforms!</>}
       />
+      <div className="mt-8 flex flex-col items-center gap-4">
+        <div className="flex items-center gap-4">
+          <Button variant="outline" size="icon" asChild>
+            <Link href="mailto:justinjinaz@gmail.com" aria-label="Email">
+              <Icons.mail className="size-5" />
+            </Link>
+          </Button>
+          <span className="text-white">justinjinaz@gmail.com</span>
+        </div>
+        <div className="flex items-center gap-4">
+          <Button variant="outline" size="icon" asChild>
+            <Link
+              href="https://www.linkedin.com/in/jjin43/"
+              aria-label="LinkedIn"
+              target="_blank"
+            >
+              <Icons.linkedin className="size-5" />
+            </Link>
+          </Button>
+          <span className="text-white">linkedin.com/in/jjin43</span>
+        </div>
+        <div className="flex items-center gap-4">
+          <Button variant="outline" size="icon" asChild>
+            <Link
+              href="https://github.com/jjin43/"
+              aria-label="GitHub"
+              target="_blank"
+            >
+              <Icons.github className="size-5" />
+            </Link>
+          </Button>
+          <span className="text-white">github.com/jjin43</span>
+        </div>
+      </div>
     </motion.section>
   );
 };

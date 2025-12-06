@@ -43,9 +43,9 @@ export const Intro = () => {
         Hello, I&#39;m{' '}
         <span className="bg-gradient-to-r from-rose-700 to-pink-600 bg-clip-text text-transparent">
           Justin Jin
-        </span>
-        ,
-        <br className="hidden sm:block" />a full-stack developer.
+        </span>{' '}
+        &mdash;
+        <br className="hidden sm:block" />a full-stack software developer.
       </motion.h1>
       <motion.p
         initial={{ opacity: 0, y: 100 }}

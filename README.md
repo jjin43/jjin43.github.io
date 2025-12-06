@@ -1,3 +1,3 @@
 # jjin43.github.io
-## www.jjin43.com
+### [Visit Page](https://jjin43.github.io/)
 Yet Another Personal Website - Justin Jin / jjin43

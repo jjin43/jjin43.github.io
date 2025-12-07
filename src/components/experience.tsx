@@ -24,7 +24,7 @@ export const Experience = () => {
       />
       <div className="relative max-w-screen-md">
         {experiencesData.map(
-          ({ title, description, company, period, technologies }) => (
+          ({ title, description, company, period, location, technologies }) => (
             <div
               key={company}
               className="not-last:pb-12 relative pl-8 [&:not(:last-child)]:pb-10"
@@ -46,17 +46,25 @@ export const Experience = () => {
                 }}
                 className={cn('space-y-3 opacity-0')}
               >
-                <div className="flex items-center gap-3">
-                  <div className="flex size-9 shrink-0 items-center justify-center rounded-full border">
-                    <Icons.building className="size-5" />
-                  </div>
-                  <span className="text-lg font-semibold">{company}</span>
-                </div>
                 <div>
                   <h3 className="text-xl font-medium">{title}</h3>
-                  <div className="mt-1 flex items-center gap-2 text-sm">
-                    <Icons.calendar className="size-4" />
-                    <span>{period}</span>
+                </div>
+                <div className="flex items-end justify-between gap-3">
+                  <div className="flex items-center gap-3">
+                    <div className="flex size-9 shrink-0 items-center justify-center rounded-full border">
+                      <Icons.building className="size-5" />
+                    </div>
+                    <span className="text-lg font-semibold">{company}</span>
+                  </div>
+                  <div className="flex flex-col gap-1 text-right text-sm">
+                    <div className="flex items-center justify-end gap-2">
+                      <Icons.calendar className="size-4" />
+                      <span>{period}</span>
+                    </div>
+                    <div className="flex items-center justify-end gap-2">
+                      <Icons.mapPin className="size-4" />
+                      <span>{location}</span>
+                    </div>
                   </div>
                 </div>
                 <p className="text-muted-foreground">{description}</p>

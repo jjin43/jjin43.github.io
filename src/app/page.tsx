@@ -1,4 +1,5 @@
 import { About } from '@/components/about';
+import Awards from '@/components/awards';
 import { Contact } from '@/components/contact';
 import { Experience } from '@/components/experience';
 import { Footer } from '@/components/footer';
@@ -17,6 +18,7 @@ const HomePage = async () => {
         <SectionDivider />
         <About />
         <Experience />
+        <Awards />
         <Projects />
         <Contact />
         <Footer />

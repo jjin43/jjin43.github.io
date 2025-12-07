@@ -1,5 +1,7 @@
 'use client';
 
+//fonts: big, crazy, doom, epic
+import { doom, useAsciiText } from 'react-ascii-text';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 
@@ -10,12 +12,23 @@ import { useSectionInView } from '@/hooks/use-section-in-view';
 export const Intro = () => {
   const { ref } = useSectionInView('Home');
 
+  const asciiArt = useAsciiText({
+    animationCharacters: ' ',
+    animationDelay: 4000,
+    animationInterval: 20,
+    animationLoop: true,
+    animationSpeed: 20,
+    font: doom,
+    text: ['JUSTIN JIN', '@jjin43'],
+  }) as React.RefObject<HTMLPreElement | null>;
+
   return (
     <section
       ref={ref}
       id="home"
       className="my-10 flex scroll-mt-96 flex-col items-center gap-5 text-center sm:mt-28"
     >
+      <pre ref={asciiArt}></pre>
       <motion.div
         initial={{ opacity: 0, scale: 0 }}
         animate={{ opacity: 1, scale: 1 }}

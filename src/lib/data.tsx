@@ -22,6 +22,10 @@ export const links = [
     hash: '#awards',
   },
   {
+    name: 'Gallery',
+    hash: '#gallery',
+  },
+  {
     name: 'Contact',
     hash: '#contact',
   },
@@ -29,7 +33,7 @@ export const links = [
 
 export const projectsData = [
   {
-    image: '/images/project-2.webp',
+    image: '/images/project_2.webp',
     title: 'Next-starter',
     description:
       'A Next.js starter template, packed with features like TypeScript, Tailwind CSS, Next-auth, Eslint, Stripe, testing tools and more.',
@@ -37,7 +41,7 @@ export const projectsData = [
     link: 'https://example.com',
   },
   {
-    image: '/images/project-1.webp',
+    image: '/images/project_1.webp',
     title: 'SocialHub',
     description:
       'SocialHub is a next-generation social media app developed using Next.js and Nest.js.',
@@ -143,5 +147,24 @@ export const awardsData = [
     title: '1st Place - Best Use of External Data',
     issuer: 'Arizona ASA DataFest Competition',
     year: '2022',
+  },
+] as const;
+
+export const galleryImages = [
+  {
+    src: '/images/gallery_1.webp',
+    alt: 'Gallery image 1',
+  },
+  {
+    src: '/images/gallery_2.webp',
+    alt: 'Gallery image 2',
+  },
+  {
+    src: '/images/gallery_3.webp',
+    alt: 'Gallery image 3',
+  },
+  {
+    src: '/images/gallery_4.webp',
+    alt: 'Gallery image 4',
   },
 ] as const;

@@ -24,7 +24,15 @@ export const Experience = () => {
       />
       <div className="relative max-w-screen-md">
         {experiencesData.map(
-          ({ title, description, company, period, location, technologies }) => (
+          ({
+            title,
+            description,
+            company,
+            period,
+            location,
+            technologies,
+            bulletPoints,
+          }) => (
             <div
               key={company}
               className="not-last:pb-12 relative pl-8 [&:not(:last-child)]:pb-10"
@@ -68,6 +76,13 @@ export const Experience = () => {
                   </div>
                 </div>
                 <p className="text-muted-foreground">{description}</p>
+                {bulletPoints && (
+                  <ul className="text-muted-foreground list-inside list-disc space-y-1">
+                    {bulletPoints.map((point: string, index: number) => (
+                      <li key={index}>{point}</li>
+                    ))}
+                  </ul>
+                )}
                 <div className="flex flex-wrap gap-2">
                   {technologies.map((tech) => (
                     <div

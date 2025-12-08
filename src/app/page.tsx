@@ -18,8 +18,8 @@ const HomePage = async () => {
         <SectionDivider />
         <About />
         <Experience />
-        <Awards />
         <Projects />
+        <Awards />
         <Contact />
         <Footer />
       </div>

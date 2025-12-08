@@ -14,7 +14,7 @@ export const Intro = () => {
 
   const asciiArt = useAsciiText({
     animationCharacters: ' ',
-    animationDelay: 4000,
+    animationDelay: 3000,
     animationInterval: 20,
     animationLoop: true,
     animationSpeed: 20,
@@ -26,7 +26,7 @@ export const Intro = () => {
     <section
       ref={ref}
       id="home"
-      className="my-10 flex scroll-mt-96 flex-col items-center gap-5 text-center sm:mt-28"
+      className="-mt-5 flex scroll-mt-96 flex-col items-center gap-5 text-center"
     >
       <pre ref={asciiArt}></pre>
       <motion.div
@@ -39,13 +39,13 @@ export const Intro = () => {
       >
         <Link
           href="#contact"
-          className="flex items-center gap-3 rounded border px-3 py-1"
+          className="flex items-center gap-3 rounded border px-3 py-0"
         >
           <span className="relative flex size-2">
             <span className="absolute flex size-full animate-ping rounded-full bg-green-400 opacity-75"></span>
             <span className="relative flex size-2 rounded-full bg-green-400"></span>
           </span>
-          <span className="font-mono text-sm">Available for work!</span>
+          <span className="font-mono text-sm">Open for Hire!</span>
         </Link>
       </motion.div>
       <motion.h1
@@ -68,8 +68,9 @@ export const Intro = () => {
         }}
         className="text-muted-foreground max-w-xl"
       >
-        I&#39;m passionate about building modern web applications, cloud
-        infrastrcture, and scalable systems.
+        Welcome to my personal website/portfolio.I&#39;m passionate about
+        building modern web applications, cloud infrastrcture, and scalable
+        systems.
       </motion.p>
       <motion.div
         initial={{ opacity: 0, y: 100 }}
@@ -77,7 +78,7 @@ export const Intro = () => {
         transition={{
           delay: 0.1,
         }}
-        className="flex flex-row gap-2"
+        className="mb-5 flex flex-row gap-2"
       >
         <Button asChild size="lg">
           <Link href="#contact">
@@ -88,6 +89,11 @@ export const Intro = () => {
           <a href="/jjin43_resume.pdf" download>
             Download CV <Icons.download className="ml-2 size-4" />
           </a>
+        </Button>
+        <Button variant="outline" size="icon" className="ml-10" asChild>
+          <Link href="mailto:justinjinaz@gmail.com" aria-label="Email">
+            <Icons.mail className="size-5" />
+          </Link>
         </Button>
         <Button variant="outline" size="icon" asChild>
           <Link

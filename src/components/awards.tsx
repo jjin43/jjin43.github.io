@@ -46,9 +46,6 @@ const Awards: React.FC = () => {
             <p className="mb-1 text-gray-600 dark:text-gray-300">
               {award.issuer} &mdash; {award.year}
             </p>
-            <p className="text-gray-700 dark:text-gray-400">
-              {award.description}
-            </p>
           </motion.div>
         ))}
       </div>

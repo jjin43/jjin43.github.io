@@ -50,6 +50,18 @@ const Awards: React.FC = () => {
             <p className="text-muted-foreground mt-1 text-xs">
               {award.issuer} &mdash; {award.year}
             </p>
+            {award.tech && (
+              <div className="mt-2 flex flex-wrap gap-2">
+                {award.tech.map((tech: string) => (
+                  <span
+                    className="rounded-full border px-2 py-1 text-xs sm:px-3 sm:text-sm"
+                    key={tech}
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            )}
           </motion.div>
         ))}
       </div>

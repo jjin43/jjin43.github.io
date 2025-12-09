@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 import { SectionHeading } from '@/components/section-heading';
 import { useSectionInView } from '@/hooks/use-section-in-view';
-import { galleryImages } from '@/lib/data';
+import { galleryData } from '@/lib/data';
 
 export const Gallery = () => {
   const { ref } = useSectionInView('Gallery');
@@ -28,8 +28,8 @@ export const Gallery = () => {
           {/* Main display image */}
           <div className="aspect-video overflow-hidden rounded-lg">
             <Image
-              src={galleryImages[activeImage].src}
-              alt={galleryImages[activeImage].alt}
+              src={galleryData[activeImage].src}
+              alt={galleryData[activeImage].alt}
               width={1470}
               height={480}
               className="size-full rounded-lg object-cover object-center transition-all duration-300"
@@ -38,8 +38,8 @@ export const Gallery = () => {
           </div>
 
           {/* Thumbnail grid */}
-          <div className="grid grid-cols-4 gap-2 sm:gap-4">
-            {galleryImages.map((image, index) => (
+          <div className="grid grid-cols-5 gap-2 sm:gap-4">
+            {galleryData.map((image, index) => (
               <div
                 key={index}
                 className="aspect-video overflow-hidden rounded-lg"

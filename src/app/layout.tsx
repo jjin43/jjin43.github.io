@@ -20,10 +20,15 @@ export const metadata: Metadata = {
   keywords: siteConfig.keywords,
   robots: { index: true, follow: true },
   icons: {
-    icon: '/favicon/favicon.ico',
-    shortcut: '/favicon/favicon.png',
+    icon: [
+      { url: '/favicon/favicon.ico' },
+      { url: '/favicon/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon/favicon-96x96.png', sizes: '96x96' },
+    ],
+    shortcut: '/favicon/favicon.ico',
     apple: '/favicon/apple-touch-icon.png',
   },
+  manifest: '/favicon/site.webmanifest',
   verification: {
     google: siteConfig.googleSiteVerificationId,
   },

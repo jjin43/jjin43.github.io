@@ -30,7 +30,7 @@ export const Experiences = () => {
             company,
             period,
             location,
-            technologies,
+            tech,
             bulletPoints,
           }) => (
             <div
@@ -90,7 +90,7 @@ export const Experiences = () => {
                   </ul>
                 )}
                 <div className="flex flex-wrap gap-1 sm:gap-2">
-                  {technologies.map((tech) => (
+                  {tech.map((tech) => (
                     <div
                       key={tech}
                       className="rounded-full border px-1.5 py-0.5 text-[10px] sm:px-2 sm:py-1 sm:text-xs md:px-3 md:text-sm"

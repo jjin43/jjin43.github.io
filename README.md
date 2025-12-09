@@ -4,9 +4,9 @@ Personal Website - Justin Jin / jjin43
 
 ## Modifications
 
-```\lib\site-config.ts``` contains personal site information (title, keywords, etc).
-```\lib\data.ts``` contains data entries for projects and experiences.
-```\public\resume.pdf``` update downloaded resume.
+```\lib\site-config.ts``` contains personal site information (title, keywords, etc).  
+```\lib\data.ts``` contains data entries for projects and experiences.  
+```\public\resume.pdf``` update downloaded resume.  
 
 ## Installation
 

@@ -26,7 +26,7 @@ export const Gallery = () => {
         />
         <div className="mx-auto mt-6 grid w-full max-w-4xl gap-2 sm:gap-4">
           {/* Main display image */}
-          <div className="aspect-video overflow-hidden rounded-lg">
+          <div className="aspect-video overflow-hidden rounded-lg shadow-lg">
             <Image
               src={galleryData[activeImage].src}
               alt={galleryData[activeImage].alt}
@@ -42,7 +42,7 @@ export const Gallery = () => {
             {galleryData.map((image, index) => (
               <div
                 key={index}
-                className="aspect-video overflow-hidden rounded-lg"
+                className="aspect-video overflow-hidden rounded-lg shadow-lg"
               >
                 <Image
                   src={image.src}

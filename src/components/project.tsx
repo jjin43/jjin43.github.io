@@ -39,7 +39,7 @@ export const Project = ({ project, index }: TProps) => {
         once: true,
       }}
       custom={index}
-      className="flex flex-col rounded border p-5 md:w-1/2"
+      className="flex flex-col rounded border p-5 shadow-lg md:w-1/2"
     >
       <Link
         href={link}

@@ -44,11 +44,12 @@ const Awards: React.FC = () => {
             whileInView="animate"
             viewport={{ once: true }}
             custom={idx}
-            className="flex flex-col rounded border p-5"
+            className="flex flex-col rounded border p-5 shadow-lg"
           >
             <h3 className="text-base font-medium">{award.title}</h3>
-            <p className="text-muted-foreground mt-1 text-xs">
-              {award.issuer} &mdash; {award.year}
+            <p className="text-muted-foreground mt-1 text-xs">{award.issuer}</p>
+            <p className="text-muted-foreground text-xs">
+              &mdash; {award.year}
             </p>
             {award.tech && (
               <div className="mt-2 flex flex-wrap gap-2">

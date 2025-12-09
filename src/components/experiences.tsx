@@ -35,7 +35,7 @@ export const Experiences = () => {
           }) => (
             <div
               key={company}
-              className="not-last:pb-6 relative pl-5 sm:pl-8 [&:not(:last-child)]:pb-6 sm:[&:not(:last-child)]:pb-10"
+              className="not-last:pb-12 relative pl-5 sm:pl-8 [&:not(:last-child)]:pb-16 sm:[&:not(:last-child)]:pb-24"
             >
               <div className="bg-muted absolute left-0 top-1.5 h-full w-[1.5px] group-first:top-4 group-first:h-[calc(100%-16px)]">
                 <div className="border-primary bg-border border-1.5 absolute left-[-4px] top-0 size-2 rounded-full" />
@@ -61,7 +61,7 @@ export const Experiences = () => {
                 </div>
                 <div className="flex items-end justify-between gap-2 sm:gap-3">
                   <div className="flex items-center gap-2 sm:gap-3">
-                    <div className="flex size-6 shrink-0 items-center justify-center rounded-full border sm:size-9">
+                    <div className="flex size-6 shrink-0 items-center justify-center rounded-full sm:size-9">
                       <Icons.building className="size-3 sm:size-5" />
                     </div>
                     <span className="text-xs font-semibold sm:text-base sm:font-semibold md:text-lg">

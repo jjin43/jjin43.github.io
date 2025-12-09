@@ -9,13 +9,13 @@ import { useSectionInView } from '@/hooks/use-section-in-view';
 import { experiencesData } from '@/lib/data';
 import { cn } from '@/lib/utils';
 
-export const Experience = () => {
-  const { ref: sectionRef } = useSectionInView('Experience');
+export const Experiences = () => {
+  const { ref: sectionRef } = useSectionInView('Experiences');
 
   return (
     <section
       ref={sectionRef}
-      id="experience"
+      id="experiences"
       className="my-10 scroll-mt-28 md:mb-20"
     >
       <SectionHeading
@@ -35,10 +35,10 @@ export const Experience = () => {
           }) => (
             <div
               key={company}
-              className="not-last:pb-12 relative pl-8 [&:not(:last-child)]:pb-10"
+              className="not-last:pb-6 relative pl-5 sm:pl-8 [&:not(:last-child)]:pb-6 sm:[&:not(:last-child)]:pb-10"
             >
-              <div className="bg-muted absolute left-0 top-2.5 h-full w-[2px] group-first:top-6 group-first:h-[calc(100%-24px)]">
-                <div className="border-primary bg-background absolute left-[-5px] top-0 size-3 rounded-full border-2" />
+              <div className="bg-muted absolute left-0 top-1.5 h-full w-[1.5px] group-first:top-4 group-first:h-[calc(100%-16px)]">
+                <div className="border-primary bg-background border-1.5 absolute left-[-3px] top-0 size-2 rounded-full" />
               </div>
               <motion.div
                 initial={{ opacity: 0, y: 100 }}
@@ -52,42 +52,48 @@ export const Experience = () => {
                 viewport={{
                   once: true,
                 }}
-                className={cn('space-y-3 opacity-0')}
+                className={cn('space-y-2 opacity-0 sm:space-y-3')}
               >
                 <div>
-                  <h3 className="text-xl font-medium">{title}</h3>
+                  <h3 className="text-sm font-medium sm:text-base md:text-lg lg:text-xl">
+                    {title}
+                  </h3>
                 </div>
-                <div className="flex items-end justify-between gap-3">
-                  <div className="flex items-center gap-3">
-                    <div className="flex size-9 shrink-0 items-center justify-center rounded-full border">
-                      <Icons.building className="size-5" />
+                <div className="flex items-end justify-between gap-2 sm:gap-3">
+                  <div className="flex items-center gap-2 sm:gap-3">
+                    <div className="flex size-6 shrink-0 items-center justify-center rounded-full border sm:size-9">
+                      <Icons.building className="size-3 sm:size-5" />
                     </div>
-                    <span className="text-lg font-semibold">{company}</span>
+                    <span className="text-xs font-semibold sm:text-base sm:font-semibold md:text-lg">
+                      {company}
+                    </span>
                   </div>
-                  <div className="flex flex-col gap-1 text-right text-sm">
-                    <div className="flex items-center justify-end gap-2">
-                      <Icons.calendar className="size-4" />
+                  <div className="flex flex-col gap-0.5 text-[10px] sm:gap-1 sm:text-xs md:text-sm">
+                    <div className="flex items-center gap-1 sm:gap-2">
+                      <Icons.calendar className="size-3 sm:size-4" />
                       <span>{period}</span>
                     </div>
-                    <div className="flex items-center justify-end gap-2">
-                      <Icons.mapPin className="size-4" />
+                    <div className="flex items-center gap-1 sm:gap-2">
+                      <Icons.mapPin className="size-3 sm:size-4" />
                       <span>{location}</span>
                     </div>
                   </div>
                 </div>
-                <p className="text-muted-foreground">{description}</p>
+                <p className="text-muted-foreground text-xs sm:text-sm">
+                  {description}
+                </p>
                 {bulletPoints && (
-                  <ul className="text-muted-foreground list-inside list-disc space-y-1">
+                  <ul className="text-muted-foreground list-inside list-disc space-y-0.5 text-xs sm:space-y-1 sm:text-sm">
                     {bulletPoints.map((point: string, index: number) => (
                       <li key={index}>{point}</li>
                     ))}
                   </ul>
                 )}
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-1 sm:gap-2">
                   {technologies.map((tech) => (
                     <div
                       key={tech}
-                      className="rounded-full border px-3 py-1 text-sm "
+                      className="rounded-full border px-1.5 py-0.5 text-[10px] sm:px-2 sm:py-1 sm:text-xs md:px-3 md:text-sm"
                     >
                       {tech}
                     </div>

@@ -13,7 +13,7 @@ export const Gallery = () => {
   const [activeImage, setActiveImage] = useState(0);
 
   return (
-    <section ref={ref} id="gallery" className="mt-5 scroll-mt-28">
+    <section ref={ref} id="gallery" className="my-10 scroll-mt-28 md:mb-20">
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -22,31 +22,34 @@ export const Gallery = () => {
       >
         <SectionHeading
           heading="Gallery"
-          content="See me holding a classic comically large check!"
+          content="See me holding a comically large & awesome check!"
         />
-        <div className="mx-auto mt-8 grid w-full max-w-4xl gap-4">
+        <div className="mx-auto mt-6 grid w-full max-w-4xl gap-2 sm:gap-4">
           {/* Main display image */}
-          <div className="overflow-hidden rounded-lg">
+          <div className="aspect-video overflow-hidden rounded-lg">
             <Image
               src={galleryImages[activeImage].src}
               alt={galleryImages[activeImage].alt}
               width={1470}
               height={480}
-              className="h-auto w-full max-w-full rounded-lg object-cover object-center transition-all duration-300 md:h-[480px]"
+              className="size-full rounded-lg object-cover object-center transition-all duration-300"
               priority={activeImage === 0}
             />
           </div>
 
           {/* Thumbnail grid */}
-          <div className="grid grid-cols-4 gap-4">
+          <div className="grid grid-cols-4 gap-2 sm:gap-4">
             {galleryImages.map((image, index) => (
-              <div key={index} className="overflow-hidden rounded-lg">
+              <div
+                key={index}
+                className="aspect-video overflow-hidden rounded-lg"
+              >
                 <Image
                   src={image.src}
                   alt={image.alt}
                   width={300}
-                  height={80}
-                  className={`h-20 max-w-full cursor-pointer rounded-lg object-cover object-center transition-all duration-300 hover:opacity-80 ${
+                  height={300}
+                  className={`size-full cursor-pointer rounded-lg object-cover object-center transition-all duration-300 hover:opacity-80 ${
                     activeImage === index
                       ? 'ring-primary ring-offset-background ring-2 ring-offset-2'
                       : 'opacity-60 hover:opacity-100'

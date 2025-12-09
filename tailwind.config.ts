@@ -61,6 +61,11 @@ const config = {
       borderRadius: {
         md: '0.3rem',
       },
+      scale: {
+        70: '0.7',
+        65: '0.65',
+        60: '0.6',
+      },
     },
   },
   plugins: [require('tailwindcss-animate')],

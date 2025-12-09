@@ -26,9 +26,12 @@ export const Intro = () => {
     <section
       ref={ref}
       id="home"
-      className="-mt-5 flex scroll-mt-96 flex-col items-center gap-5 text-center"
+      className="-mt-5 flex max-w-full scroll-mt-96 flex-col items-center gap-5 text-center"
     >
-      <pre ref={asciiArt}></pre>
+      <pre
+        ref={asciiArt}
+        className="scale-50 select-none sm:scale-75 md:scale-100"
+      ></pre>
       <motion.div
         initial={{ opacity: 0, scale: 0 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -51,13 +54,13 @@ export const Intro = () => {
       <motion.h1
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
-        className="font-heading max-w-3xl text-4xl font-extrabold md:text-5xl"
+        className="font-heading max-w-3xl text-2xl font-extrabold sm:text-3xl md:text-4xl lg:text-5xl"
       >
         Hello, I&#39;m{' '}
         <span className="bg-gradient-to-r from-rose-700 to-pink-600 bg-clip-text text-transparent">
           Justin Jin
-        </span>{' '}
-        &mdash;
+        </span>
+        &nbsp;&mdash;&nbsp;
         <br className="hidden sm:block" />a full-stack software developer.
       </motion.h1>
       <motion.p
@@ -66,7 +69,7 @@ export const Intro = () => {
         transition={{
           delay: 0.1,
         }}
-        className="text-muted-foreground max-w-xl"
+        className="text-muted-foreground max-w-xl text-sm sm:text-base"
       >
         Welcome to my personal website/portfolio.I&#39;m passionate about
         building modern web applications, cloud infrastrcture, and scalable
@@ -78,19 +81,28 @@ export const Intro = () => {
         transition={{
           delay: 0.1,
         }}
-        className="mb-5 flex flex-row gap-2"
+        className="flex flex-col gap-2 sm:flex-row"
       >
-        <Button asChild size="lg">
+        <Button asChild size="lg" className="w-full sm:w-44">
           <Link href="#contact">
             Hire Me! <Icons.arrowRight className="ml-2 size-4" />
           </Link>
         </Button>
-        <Button variant="outline" size="lg" className="hidden sm:flex" asChild>
+        <Button variant="outline" size="lg" asChild className="w-full sm:w-44">
           <a href="/jjin43_resume.pdf" download>
             Download CV <Icons.download className="ml-2 size-4" />
           </a>
         </Button>
-        <Button variant="outline" size="icon" className="ml-10" asChild>
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: 0.15,
+        }}
+        className="mb-5 flex gap-2"
+      >
+        <Button variant="outline" size="icon" asChild>
           <Link href="mailto:justinjinaz@gmail.com" aria-label="Email">
             <Icons.mail className="size-5" />
           </Link>
@@ -111,6 +123,11 @@ export const Intro = () => {
             target="_blank"
           >
             <Icons.github className="size-5" />
+          </Link>
+        </Button>
+        <Button variant="outline" size="icon" asChild>
+          <Link href="https://x.com/jjin43" aria-label="X" target="_blank">
+            <Icons.x className="size-5" />
           </Link>
         </Button>
       </motion.div>

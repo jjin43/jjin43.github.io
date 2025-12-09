@@ -43,6 +43,7 @@ export const About = () => {
         </p>
         <p>
           M.S. & B.S. - Computer Science &nbsp; | &nbsp; Minor - Mathematics
+          &nbsp;&nbsp;&nbsp; @ ASU
         </p>
       </div>
       <Skills />

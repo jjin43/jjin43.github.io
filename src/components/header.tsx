@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 
@@ -19,6 +19,11 @@ import { links } from '@/lib/data';
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
   const { activeSection, setActiveSection, setTimeOfLastClick } =
     useActiveSection();
 
@@ -28,42 +33,44 @@ export const Header = () => {
       animate={{ y: 0, opacity: 1 }}
       className="sm:bg-background/80 sticky top-5 z-20 my-5 flex items-center gap-2 sm:top-10 sm:my-10 sm:rounded-full sm:border-2 sm:px-2 sm:py-3 sm:backdrop-blur-sm"
     >
-      <Dialog open={isOpen} onOpenChange={setIsOpen}>
-        <DialogTrigger asChild>
-          <Button
-            variant="outline"
-            size="lg"
-            className="bg-background/80 backdrop-blur-sm sm:hidden"
-          >
-            Menu <Icons.chevronDown className="ml-2 size-4" />
-          </Button>
-        </DialogTrigger>
-        <DialogContent className="text-muted-foreground max-h-screen w-[90%] rounded">
-          <DialogHeader>
-            <DialogTitle className="text-md self-start font-medium">
-              Navigation
-            </DialogTitle>
-          </DialogHeader>
-          <nav>
-            <ul>
-              {links.map(({ name, hash }) => (
-                <li
-                  onClick={() => setIsOpen(false)}
-                  key={name}
-                  className="border-muted-foreground/10 py-3 text-sm [&:not(:last-child)]:border-b"
-                >
-                  <Link className="block" href={hash}>
-                    {name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
-        </DialogContent>
-      </Dialog>
+      {isMounted && (
+        <Dialog open={isOpen} onOpenChange={setIsOpen}>
+          <DialogTrigger asChild>
+            <Button
+              variant="outline"
+              size="lg"
+              className="bg-background/80 backdrop-blur-sm sm:hidden"
+            >
+              Menu <Icons.chevronDown className="ml-2 size-4" />
+            </Button>
+          </DialogTrigger>
+          <DialogContent className="text-muted-foreground max-h-screen w-[90%] rounded">
+            <DialogHeader>
+              <DialogTitle className="sm:text-md self-start text-sm font-medium">
+                What you want to see?
+              </DialogTitle>
+            </DialogHeader>
+            <nav>
+              <ul>
+                {links.map(({ name, hash }) => (
+                  <li
+                    onClick={() => setIsOpen(false)}
+                    key={name}
+                    className="border-muted-foreground/10 py-3 text-xs sm:text-sm [&:not(:last-child)]:border-b"
+                  >
+                    <Link className="block" href={hash}>
+                      {name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          </DialogContent>
+        </Dialog>
+      )}
       <ThemeToggle className="bg-background/80 backdrop-blur-sm sm:hidden" />
-      <nav className="text-muted-foreground hidden text-sm sm:block">
-        <ul className="flex gap-5">
+      <nav className="text-muted-foreground hidden text-xs sm:block sm:text-sm">
+        <ul className="flex gap-3">
           {links.map(({ name, hash }) => (
             <li key={name}>
               <Link

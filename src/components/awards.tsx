@@ -22,14 +22,16 @@ const fadeInAnimationVariants = {
 const Awards: React.FC = () => {
   const { ref } = useSectionInView('Awards');
   return (
-    <section ref={ref} id="awards" className="scroll-mt-28 py-12">
+    <section ref={ref} id="awards" className="my-10 scroll-mt-28 md:mb-20">
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.175 }}
         viewport={{ once: true }}
       >
-        <h2 className="mb-8 text-center text-3xl font-bold">Awards</h2>
+        <h2 className="mb-6 text-center text-xl font-bold sm:mb-8 sm:text-2xl md:text-3xl">
+          Awards
+        </h2>
       </motion.div>
       <div className="grid gap-6 md:grid-cols-2">
         {awardsData.map((award, idx) => (
@@ -40,10 +42,12 @@ const Awards: React.FC = () => {
             whileInView="animate"
             viewport={{ once: true }}
             custom={idx}
-            className="rounded-lg bg-white p-6 shadow dark:bg-gray-800"
+            className="rounded-lg bg-white p-4 shadow sm:p-6 dark:bg-gray-800"
           >
-            <h3 className="mb-2 text-xl font-semibold">{award.title}</h3>
-            <p className="mb-1 text-gray-600 dark:text-gray-300">
+            <h3 className="mb-2 text-lg font-semibold sm:text-xl">
+              {award.title}
+            </h3>
+            <p className="mb-1 text-sm text-gray-600 sm:text-base dark:text-gray-300">
               {award.issuer} &mdash; {award.year}
             </p>
           </motion.div>

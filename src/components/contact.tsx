@@ -15,7 +15,7 @@ export const Contact = () => {
     <motion.section
       ref={ref}
       id="contact"
-      className="my-10 mb-64 w-full scroll-mt-28 md:mb-64"
+      className="my-10 scroll-mt-28 md:mb-52"
       initial={{
         opacity: 0,
       }}
@@ -38,10 +38,10 @@ export const Contact = () => {
           <div className="flex items-center gap-4">
             <Button variant="outline" size="icon" asChild>
               <Link href="mailto:justinjinaz@gmail.com" aria-label="Email">
-                <Icons.mail className="size-5" />
+                <Icons.mail className="size-4 sm:size-5" />
               </Link>
             </Button>
-            <span>justinjinaz@gmail.com</span>
+            <span className="text-sm sm:text-base">justinjinaz@gmail.com</span>
           </div>
           <div className="flex items-center gap-4">
             <Button variant="outline" size="icon" asChild>
@@ -50,10 +50,10 @@ export const Contact = () => {
                 aria-label="LinkedIn"
                 target="_blank"
               >
-                <Icons.linkedin className="size-5" />
+                <Icons.linkedin className="size-4 sm:size-5" />
               </Link>
             </Button>
-            <span>linkedin.com/in/jjin43</span>
+            <span className="text-sm sm:text-base">linkedin.com/in/jjin43</span>
           </div>
           <div className="flex items-center gap-4">
             <Button variant="outline" size="icon" asChild>
@@ -62,10 +62,18 @@ export const Contact = () => {
                 aria-label="GitHub"
                 target="_blank"
               >
-                <Icons.github className="size-5" />
+                <Icons.github className="size-4 sm:size-5" />
               </Link>
             </Button>
-            <span>github.com/jjin43</span>
+            <span className="text-sm sm:text-base">github.com/jjin43</span>
+          </div>
+          <div className="flex items-center gap-4">
+            <Button variant="outline" size="icon" asChild>
+              <Link href="https://x.com/jjin43" aria-label="X" target="_blank">
+                <Icons.x className="size-4 sm:size-5" />
+              </Link>
+            </Button>
+            <span className="text-sm sm:text-base">x.com/jjin43</span>
           </div>
         </div>
       </div>

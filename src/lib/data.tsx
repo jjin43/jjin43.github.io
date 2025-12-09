@@ -26,27 +26,27 @@ export const links = [
     hash: '#gallery',
   },
   {
-    name: 'Contact',
-    hash: '#contact',
+    name: 'Contacts',
+    hash: '#contacts',
   },
 ] as const;
 
 export const projectsData = [
   {
-    image: '/images/project_2.webp',
+    image: '/images/project_1.webp',
     title: 'Next-starter',
     description:
       'A Next.js starter template, packed with features like TypeScript, Tailwind CSS, Next-auth, Eslint, Stripe, testing tools and more.',
     technologies: ['Next.js', 'Tailwind', 'Shadcn/ui', 'Next-auth', 'Prisma'],
-    link: 'https://example.com',
+    link: 'https://devpost.com/software/health-insurance-for-dummys',
   },
   {
-    image: '/images/project_1.webp',
+    image: '/images/project_2.webp',
     title: 'SocialHub',
     description:
       'SocialHub is a next-generation social media app developed using Next.js and Nest.js.',
     technologies: ['Next.js', 'TypeScript', ' Nest.js', 'Tailwind', 'Prisma'],
-    link: 'https://example.com',
+    link: 'https://devpost.com/software/onemanarmy-vi4827',
   },
 ] as const;
 
@@ -137,7 +137,7 @@ export const skillsData = [
   { name: 'UNIX', icon: <Icons.unix className="size-12" /> },
   { name: 'Git', icon: <Icons.git className="size-12" /> },
   { name: 'Docker', icon: <Icons.docker className="size-12" /> },
-  { name: 'Kubernetes', icon: <Icons.kubernetes className="size-12" /> },
+  { name: 'K8S', icon: <Icons.kubernetes className="size-12" /> },
   { name: 'Helm', icon: <Icons.helm className="size-12" /> },
   { name: 'AWS', icon: <Icons.aws className="size-12" /> },
   { name: 'GCP', icon: <Icons.gcp className="size-12" /> },

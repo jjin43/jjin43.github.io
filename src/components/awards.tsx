@@ -2,6 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
+import { SectionHeading } from '@/components/section-heading';
 import { useSectionInView } from '@/hooks/use-section-in-view';
 import { awardsData } from '@/lib/data';
 
@@ -29,11 +30,12 @@ const Awards: React.FC = () => {
         transition={{ delay: 0.175 }}
         viewport={{ once: true }}
       >
-        <h2 className="mb-6 text-center text-xl font-bold sm:mb-8 sm:text-2xl md:text-3xl">
-          Awards
-        </h2>
+        <SectionHeading
+          heading="Awards"
+          content="Recognition and awards I've received."
+        />
       </motion.div>
-      <div className="grid gap-6 md:grid-cols-2">
+      <div className="grid gap-7 md:grid-cols-2 lg:grid-cols-3">
         {awardsData.map((award, idx) => (
           <motion.div
             key={idx}
@@ -42,12 +44,10 @@ const Awards: React.FC = () => {
             whileInView="animate"
             viewport={{ once: true }}
             custom={idx}
-            className="rounded-lg bg-white p-4 shadow sm:p-6 dark:bg-gray-800"
+            className="flex flex-col rounded border p-5"
           >
-            <h3 className="mb-2 text-lg font-semibold sm:text-xl">
-              {award.title}
-            </h3>
-            <p className="mb-1 text-sm text-gray-600 sm:text-base dark:text-gray-300">
+            <h3 className="text-base font-medium">{award.title}</h3>
+            <p className="text-muted-foreground mt-1 text-xs">
               {award.issuer} &mdash; {award.year}
             </p>
           </motion.div>

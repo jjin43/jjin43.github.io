@@ -89,7 +89,7 @@ export const Intro = () => {
           </Link>
         </Button>
         <Button variant="outline" size="lg" asChild className="w-full sm:w-44">
-          <a href="/jjin43_resume.pdf" download>
+          <a href="/files/jjin43_resume.pdf" download>
             Download CV <Icons.download className="ml-2 size-4" />
           </a>
         </Button>

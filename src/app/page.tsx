@@ -1,6 +1,6 @@
 import { About } from '@/components/about';
 import Awards from '@/components/awards';
-import { Contact } from '@/components/contact';
+import { Contacts } from '@/components/contacts';
 import { Experiences } from '@/components/experiences';
 import { Footer } from '@/components/footer';
 import { Gallery } from '@/components/gallery';
@@ -22,7 +22,7 @@ const HomePage = async () => {
         <Projects />
         <Awards />
         <Gallery />
-        <Contact />
+        <Contacts />
         <Footer />
       </div>
       <ThemeToggle className="bg-background hidden sm:fixed sm:bottom-8 sm:right-8 sm:flex" />

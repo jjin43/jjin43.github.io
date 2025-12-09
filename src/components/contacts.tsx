@@ -8,13 +8,13 @@ import { Icons } from '@/components/icons';
 import { SectionHeading } from '@/components/section-heading';
 import { useSectionInView } from '@/hooks/use-section-in-view';
 
-export const Contact = () => {
-  const { ref } = useSectionInView('Contact');
+export const Contacts = () => {
+  const { ref } = useSectionInView('Contacts');
 
   return (
     <motion.section
       ref={ref}
-      id="contact"
+      id="contacts"
       className="my-10 scroll-mt-28 md:mb-52"
       initial={{
         opacity: 0,

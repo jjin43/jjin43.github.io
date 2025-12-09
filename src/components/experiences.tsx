@@ -38,7 +38,7 @@ export const Experiences = () => {
               className="not-last:pb-6 relative pl-5 sm:pl-8 [&:not(:last-child)]:pb-6 sm:[&:not(:last-child)]:pb-10"
             >
               <div className="bg-muted absolute left-0 top-1.5 h-full w-[1.5px] group-first:top-4 group-first:h-[calc(100%-16px)]">
-                <div className="border-primary bg-background border-1.5 absolute left-[-3px] top-0 size-2 rounded-full" />
+                <div className="border-primary bg-border border-1.5 absolute left-[-4px] top-0 size-2 rounded-full" />
               </div>
               <motion.div
                 initial={{ opacity: 0, y: 100 }}

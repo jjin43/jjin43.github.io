@@ -24,7 +24,7 @@ export const Gallery = () => {
           heading="Gallery"
           content="See me holding a comically large & awesome check!"
         />
-        <div className="mx-auto mt-6 grid w-full max-w-4xl gap-2 sm:gap-4">
+        <div className="mx-auto mt-6 grid w-full max-w-3xl gap-2 sm:gap-4">
           {/* Main display image */}
           <div className="aspect-video overflow-hidden rounded-lg shadow-lg">
             <Image

@@ -63,7 +63,7 @@ export const About = () => {
           Enjoyer.
         </p>
         <Button asChild size="lg" className="mb-4">
-          <Link href="/ascii">
+          <Link href="https://jjin43.github.io/ascii">
             <span className="font-mono text-sm">I ❤️ ASCII</span>
           </Link>
         </Button>

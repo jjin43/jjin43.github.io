@@ -58,11 +58,11 @@ export const About = () => {
           If you have opportunity where I seem like a good match, don&apos;t
           hesitate to contact me!
         </p>
-        <p>
+        <p className="mb-4">
           Big fan of ASCII animations. Caffine Demon. S-Tier Vibe Coder. Nano
           Enjoyer.
         </p>
-        <Button asChild size="lg" className="mt-4">
+        <Button asChild size="lg" className="mb-4">
           <Link href="/ascii">
             <span className="font-mono text-sm">I ❤️ ASCII</span>
           </Link>

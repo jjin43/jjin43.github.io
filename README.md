@@ -2,11 +2,11 @@
 
 Personal Website - Justin Jin / jjin43
 
-## Modifications
+## Data Location
 
-```\lib\site-config.ts``` contains personal site information (title, keywords, etc).  
-```\lib\data.ts``` contains data entries for projects and experiences.  
-```\public\files\resume.pdf``` update downloaded resume.  
+```\lib\site-config.ts``` - personal site information (title, keywords, etc).  
+```\lib\data.ts``` - data entries for components.  
+```\public\files\resume.pdf``` - downloadable resume.  
 
 ## Installation
 
@@ -33,6 +33,8 @@ and open <http://localhost:3000>.
 Finally, deploy to github pages with:
 
 ```bash
+npm run build
+# verify that /out exists in root dir
 npm run deploy
 ```
 

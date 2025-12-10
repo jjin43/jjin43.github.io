@@ -146,7 +146,7 @@ export const experiencesData = [
   },
 ] as const;
 
-export const skillsData = [
+export const langData = [
   { name: 'C', icon: <Icons.c className="size-12" /> },
   { name: 'C++', icon: <Icons.cpp className="size-12" /> },
   { name: 'C#', icon: <Icons.csharp className="size-12" /> },
@@ -160,6 +160,9 @@ export const skillsData = [
   { name: 'SQL', icon: <Icons.sql className="size-12" /> },
   { name: 'HTML', icon: <Icons.html className="size-12" /> },
   { name: 'CSS', icon: <Icons.css className="size-12" /> },
+] as const;
+
+export const techData = [
   { name: 'Tailwind', icon: <Icons.tailwind className="size-12" /> },
   { name: 'React', icon: <Icons.react className="size-12" /> },
   { name: 'Node.js', icon: <Icons.node className="size-12" /> },

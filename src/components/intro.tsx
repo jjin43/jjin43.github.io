@@ -1,10 +1,9 @@
 'use client';
 
-//fonts: big, crazy, doom, epic
-import { doom, useAsciiText } from 'react-ascii-text';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 
+import ASCIIText from '@/components/asciitext';
 import { Button } from '@/components/button';
 import { Icons } from '@/components/icons';
 import { useSectionInView } from '@/hooks/use-section-in-view';
@@ -13,26 +12,19 @@ import { contacts } from '@/lib/data';
 export const Intro = () => {
   const { ref } = useSectionInView('Home');
 
-  const asciiArt = useAsciiText({
-    animationCharacters: ' ',
-    animationDelay: 3000,
-    animationInterval: 20,
-    animationLoop: true,
-    animationSpeed: 20,
-    font: doom,
-    text: ['JUSTIN JIN', '@jjin43'],
-  }) as React.RefObject<HTMLPreElement | null>;
-
   return (
     <section
       ref={ref}
       id="home"
       className="-mt-5 flex max-w-full scroll-mt-96 flex-col items-center gap-5 text-center"
     >
-      <pre
-        ref={asciiArt}
-        className="scale-50 select-none sm:scale-75 md:scale-100"
-      ></pre>
+      <ASCIIText
+        text={['Justin Jin', '@jjin43']}
+        enableWaves={true}
+        asciiFontSize={6}
+        textFontSize={[200, 125]}
+        planeBaseHeight={20}
+      />
       <motion.div
         initial={{ opacity: 0, scale: 0 }}
         animate={{ opacity: 1, scale: 1 }}

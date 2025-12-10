@@ -6,7 +6,6 @@ import Link from 'next/link';
 
 import { Button } from '@/components/button';
 import { SectionHeading } from '@/components/section-heading';
-import { Skills } from '@/components/skills';
 import { useSectionInView } from '@/hooks/use-section-in-view';
 
 export const About = () => {
@@ -69,7 +68,6 @@ export const About = () => {
           </Link>
         </Button>
       </div>
-      <Skills />
     </motion.section>
   );
 };

@@ -1,3 +1,33 @@
+export const contacts = [
+  {
+    type: 'email',
+    label: 'justinjinaz@gmail.com',
+    href: 'mailto:justinjinaz@gmail.com',
+    icon: Icons.mail,
+    ariaLabel: 'Email',
+  },
+  {
+    type: 'linkedin',
+    label: 'linkedin.com/in/jjin43',
+    href: 'https://www.linkedin.com/in/jjin43/',
+    icon: Icons.linkedin,
+    ariaLabel: 'LinkedIn',
+  },
+  {
+    type: 'github',
+    label: 'github.com/jjin43',
+    href: 'https://github.com/jjin43/',
+    icon: Icons.github,
+    ariaLabel: 'GitHub',
+  },
+  {
+    type: 'x',
+    label: 'x.com/justinjin43',
+    href: 'https://x.com/justinjin43',
+    icon: Icons.x,
+    ariaLabel: 'X',
+  },
+] as const;
 import { Icons } from '@/components/icons';
 
 export const links = [

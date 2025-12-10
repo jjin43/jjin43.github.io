@@ -8,6 +8,7 @@ import Link from 'next/link';
 import { Button } from '@/components/button';
 import { Icons } from '@/components/icons';
 import { useSectionInView } from '@/hooks/use-section-in-view';
+import { contacts } from '@/lib/data';
 
 export const Intro = () => {
   const { ref } = useSectionInView('Home');
@@ -102,34 +103,17 @@ export const Intro = () => {
         }}
         className="mb-5 flex gap-2"
       >
-        <Button variant="outline" size="icon" asChild>
-          <Link href="mailto:justinjinaz@gmail.com" aria-label="Email">
-            <Icons.mail className="size-5" />
-          </Link>
-        </Button>
-        <Button variant="outline" size="icon" asChild>
-          <Link
-            href="https://www.linkedin.com/in/jjin43/"
-            aria-label="Linkedin"
-            target="_blank"
-          >
-            <Icons.linkedin className="size-5" />
-          </Link>
-        </Button>
-        <Button variant="outline" size="icon" asChild>
-          <Link
-            href="https://github.com/jjin43/"
-            aria-label="Github"
-            target="_blank"
-          >
-            <Icons.github className="size-5" />
-          </Link>
-        </Button>
-        <Button variant="outline" size="icon" asChild>
-          <Link href="https://x.com/jjin43" aria-label="X" target="_blank">
-            <Icons.x className="size-5" />
-          </Link>
-        </Button>
+        {contacts.map((contact) => (
+          <Button variant="outline" size="icon" asChild key={contact.type}>
+            <Link
+              href={contact.href}
+              aria-label={contact.ariaLabel}
+              target={contact.type !== 'email' ? '_blank' : undefined}
+            >
+              <contact.icon className="size-5" />
+            </Link>
+          </Button>
+        ))}
       </motion.div>
     </section>
   );

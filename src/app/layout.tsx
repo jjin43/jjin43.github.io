@@ -1,4 +1,5 @@
 import '@/styles/globals.css';
+import '@/styles/logoloop.css';
 
 import { PropsWithChildren } from 'react';
 import type { Metadata } from 'next';

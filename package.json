@@ -12,9 +12,9 @@
     "format:check": "prettier --check \"**/*.{ts,tsx,mdx}\" --cache",
     "format:write": "prettier --write \"**/*.{ts,tsx,mdx}\" --cache",
     "typecheck": "tsc --noEmit",
-    "postbuild": "next-sitemap --config next-sitemap.config.js && node -e \"const fs=require('fs');fs.mkdirSync('out',{recursive:true});fs.writeFileSync('out/.nojekyll','');\"",
+    "postbuild": "next-sitemap --config next-sitemap.config.js",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d out",
+    "deploy": "gh-pages -d out --dotfiles --nojekyll",
     "prepare": "husky"
   },
   "husky": {

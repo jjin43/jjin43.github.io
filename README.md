@@ -6,7 +6,7 @@ Personal Website - Justin Jin / jjin43
 
 ```\lib\site-config.ts``` contains personal site information (title, keywords, etc).  
 ```\lib\data.ts``` contains data entries for projects and experiences.  
-```\public\resume.pdf``` update downloaded resume.  
+```\public\files\resume.pdf``` update downloaded resume.  
 
 ## Installation
 

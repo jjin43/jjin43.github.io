@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import { Button } from '@/components/button';
+import { Icons } from '@/components/icons';
 import { SectionHeading } from '@/components/section-heading';
 import { useSectionInView } from '@/hooks/use-section-in-view';
 
@@ -63,8 +64,10 @@ export const About = () => {
           Enjoyer.
         </p>
         <Button asChild size="lg" className="mb-4">
-          <Link href="https://jjin43.github.io/ascii">
-            <span className="font-mono text-sm">I ❤️ ASCII</span>
+          <Link href="https://jjin43.github.io/ascii-cam">
+            <Icons.camera className="mr-2 size-4" />
+            <span className="font-mono text-sm">ASCII Cam</span>
+            <Icons.arrowRight className="ml-2 size-4" />
           </Link>
         </Button>
       </div>

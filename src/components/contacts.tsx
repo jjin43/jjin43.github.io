@@ -31,7 +31,7 @@ export const Contacts = () => {
     >
       <SectionHeading
         heading="Contact Me"
-        content={<>Hire me today and reach me via the following socials!</>}
+        content={<>Hire me today and reach me via the following platforms!</>}
       />
       <div className="mt-8 flex justify-center">
         <div className="flex w-fit max-w-md flex-col items-start gap-4 text-left">

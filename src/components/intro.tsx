@@ -85,7 +85,7 @@ export const Intro = () => {
         className="flex flex-col gap-2 sm:flex-row"
       >
         <Button asChild size="lg" className="w-full sm:w-44">
-          <Link href="#contact">
+          <Link href="#contacts">
             Hire Me! <Icons.arrowRight className="ml-2 size-4" />
           </Link>
         </Button>

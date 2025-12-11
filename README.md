@@ -16,10 +16,11 @@ Clone the repo and install needed packages with:
 npm install
 ```
 
-Then create .env file:
+Then create .env file with the link:
 
 ```bash
-SITE_URL='https://example.com' ## Required to generate sitemap by next-sitemap
+SITE_URL='https://example.com'  
+## Required to generate sitemap by next-sitemap
 ```
 
 Then start the project on the local server with:
@@ -28,14 +29,13 @@ Then start the project on the local server with:
 npm run dev
 ```
 
-and open <http://localhost:3000>.
+and view page at <http://localhost:3000>.
 
 Finally, deploy to github pages with:
 
 ```bash
-npm run build
-# verify that /out exists in root dir
-npm run deploy
+npm run deploy  
+## verify that /out exists in root dir after build step
 ```
 
 ## Tech Stack

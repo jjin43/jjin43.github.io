@@ -24,7 +24,6 @@ import {
   FaReact,
   FaStar,
   FaSun,
-  FaTerminal,
 } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 import {
@@ -38,6 +37,7 @@ import {
   SiHelm,
   SiJunit5,
   SiKubernetes,
+  SiLinux,
   SiNextdotjs,
   SiRedux,
   SiRust,
@@ -81,7 +81,7 @@ export const Icons = {
   rust: SiRust,
   solidity: SiSolidity,
   sql: FaDatabase,
-  unix: FaTerminal,
+  unix: SiLinux,
   git: FaGitAlt,
   kubernetes: SiKubernetes,
   helm: SiHelm,

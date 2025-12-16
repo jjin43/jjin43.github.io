@@ -19,7 +19,9 @@ npm install
 Then create .env file with the link:
 
 ```bash
-SITE_URL='https://example.com'  
+SITE_URL='https://example.com'
+# Optionally, verify on Google Search Console for faster indexing.
+GOOGLE_SITE_VERIFICATION_ID=''
 ## Required to generate sitemap by next-sitemap
 ```
 

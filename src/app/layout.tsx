@@ -32,6 +32,28 @@ export const metadata: Metadata = {
   verification: {
     google: siteConfig.googleSiteVerificationId,
   },
+  openGraph: {
+    title: siteConfig.title,
+    description: siteConfig.description,
+    url: siteConfig.url,
+    siteName: siteConfig.title,
+    images: [
+      {
+        url: '/images/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: `${siteConfig.title} preview`,
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: siteConfig.title,
+    description: siteConfig.description,
+    images: ['/images/og-image.png'],
+  },
 };
 
 const RootLayout = ({ children }: PropsWithChildren) => {

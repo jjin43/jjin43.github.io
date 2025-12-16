@@ -27,14 +27,14 @@ export const About = () => {
           <span className="relative inline-flex">
             <Image
               src="/images/profile.png"
-              alt="Profile picture"
+              alt="Profile Picture"
               width={150}
               height={150}
               className="aspect-square rounded-full object-cover shadow-lg"
             />
             <Image
-              src="/images/avatar.png"
-              alt="Secondary profile icon"
+              src="/images/logo.png"
+              alt="Profile Logo"
               width={50}
               height={50}
               className="border-background absolute -bottom-1 -right-1 aspect-square rounded-full border-2 object-cover shadow-lg"

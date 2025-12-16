@@ -22,7 +22,7 @@ export const Gallery = () => {
       >
         <SectionHeading
           heading="Gallery"
-          content="See me holding a comically large & awesome check!"
+          content="Don't mind the hair, just going through some phases 😅"
         />
         <div className="mx-auto mt-6 grid w-full max-w-3xl gap-2 sm:gap-4">
           {/* Main display image */}

@@ -44,6 +44,12 @@ export const metadata: Metadata = {
         height: 630,
         alt: `${siteConfig.title} preview`,
       },
+      {
+        url: '/images/logo.png',
+        width: 600,
+        height: 600,
+        alt: `${siteConfig.title} logo`,
+      },
     ],
     locale: 'en_US',
     type: 'website',

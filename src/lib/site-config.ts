@@ -3,7 +3,7 @@ import { env } from '@/env.mjs';
 export const siteConfig = {
   title: 'Justin Jin | SDE',
   description:
-    "Hello, I'm Justin Jin, a full-stack developer in the US. I enjoy building web application and scalable systems. With a diverse set of skills, and an expert at using genAI tools, you can count on me to complete tasks with quality and speed.",
+    'Justin Jin - @jjin43 | Full-Stack Developer | Personal Portfolio Website',
   keywords: [
     'Justin Jin',
     'Full-Stack Developer',

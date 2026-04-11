@@ -4,6 +4,8 @@ import Marquee from 'react-fast-marquee';
 
 import { langData, techData } from '@/lib/data';
 
+const speed = 75;
+
 export const Skills = () => {
   return (
     <div className="my-10 w-full scroll-mt-28 px-5 sm:px-0 md:mb-20">
@@ -12,7 +14,7 @@ export const Skills = () => {
           <h3 className="mb-4 text-center text-lg font-semibold">Languages</h3>
           <Marquee
             pauseOnHover
-            speed={35}
+            speed={speed}
             className="[--marquee-item-spacing:1.75rem]"
           >
             {langData.map(({ icon, name }) => (
@@ -35,7 +37,7 @@ export const Skills = () => {
           </h3>
           <Marquee
             pauseOnHover
-            speed={35}
+            speed={speed}
             className="[--marquee-item-spacing:1.75rem]"
           >
             {techData.map(({ icon, name }) => (

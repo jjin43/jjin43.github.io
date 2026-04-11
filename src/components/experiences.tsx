@@ -24,15 +24,7 @@ export const Experiences = () => {
       />
       <div className="relative max-w-screen-md">
         {experiencesData.map(
-          ({
-            title,
-            description,
-            company,
-            period,
-            location,
-            tech,
-            bulletPoints,
-          }) => (
+          ({ title, company, period, location, tech, bulletPoints }) => (
             <div
               key={company}
               className="not-last:pb-12 relative pl-5 sm:pl-8 [&:not(:last-child)]:pb-16 sm:[&:not(:last-child)]:pb-24"
@@ -79,9 +71,6 @@ export const Experiences = () => {
                     </div>
                   </div>
                 </div>
-                <p className="text-muted-foreground text-xs sm:text-sm">
-                  {description}
-                </p>
                 {bulletPoints && (
                   <ul className="text-muted-foreground list-inside list-disc space-y-0.5 text-xs sm:space-y-1 sm:text-sm">
                     {bulletPoints.map((point: string, index: number) => (

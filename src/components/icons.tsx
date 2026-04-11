@@ -27,24 +27,33 @@ import {
 } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 import {
+  SiAngular,
   SiAwslambda,
   SiC,
   SiCplusplus,
   SiDotnet,
+  SiFlask,
   SiGithubactions,
+  SiGnubash,
   SiGo,
   SiGooglecloud,
   SiHelm,
   SiJunit5,
   SiKubernetes,
   SiLinux,
+  SiMongodb,
   SiNextdotjs,
+  SiPostgresql,
+  SiRedis,
   SiRedux,
   SiRust,
   SiSolidity,
+  SiSpring,
+  SiSqlite,
   SiTailwindcss,
   SiTerraform,
   SiTypescript,
+  SiYaml,
 } from 'react-icons/si';
 
 export const Icons = {
@@ -93,4 +102,15 @@ export const Icons = {
   c: SiC,
   cpp: SiCplusplus,
   csharp: SiDotnet,
+
+  yaml: SiYaml,
+  bash: SiGnubash,
+  sqlite: SiSqlite,
+  angular: SiAngular,
+  aspnet: SiDotnet,
+  spring: SiSpring,
+  flask: SiFlask,
+  mongodb: SiMongodb,
+  postgresql: SiPostgresql,
+  redis: SiRedis,
 };

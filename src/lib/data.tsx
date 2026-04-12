@@ -122,12 +122,12 @@ export const experiencesData = [
   },
   {
     title: 'Teaching Assistant',
-    company: 'CSE 498: AI Computer Vision',
+    company: 'ASU - CSE 498: AI Computer Vision',
     bulletPoints: [
       'Introduced ~60 students to tools such as PyTorch, Sci-Kit Learn, and WandB for hands-on projects',
       'Guided students through debugging model training pipelines, data preprocessing, and generating evaluation metrics.',
     ],
-    period: 'May 2025 - July 2025 | July 2023 - Dec 2023',
+    period: 'May 2025 - July 2025',
     location: 'Tempe, AZ',
     tech: ['Python', 'PyTorch', 'Sci-Kit Learn', 'WandB', 'Jupyter Notebooks'],
   },
@@ -136,7 +136,7 @@ export const experiencesData = [
     company: 'ANDBOUNDS Custom Footcare',
 
     bulletPoints: [
-      'Re-architectured an ASP.NET Core monolith into 18 gRPC microservices, containerized with Docker and deployed to Kubernetes on GCP with rolling updates and HPA, enabling independent zero-downtime service deployments.',
+      'Re-architected an ASP.NET Core monolith into 18 gRPC microservices, containerized with Docker and deployed to Kubernetes on GCP with rolling updates and HPA, enabling independent zero-downtime service deployments.',
       'Implemented Tyk API Gateway and Istio service mesh to provide load balancing, rate limiting, and secure service-to-service communication (mTLS).',
       'Enhanced React homepage with scroll-driven animations and modern UI interactions.',
       'Built GitLab CI/CD pipelines with xUnit test automation, Helm-based Kubernetes deployments, and Terraform infrastructure provisioning; reduced release time from 1 hour manual process to <10 minutes automated.',

@@ -189,7 +189,7 @@ export const langData = [
 ] as const;
 
 export const techData = [
-  { name: 'PyTorch', icon: <Icons.sqlite className="size-12" /> },
+  { name: 'PyTorch', icon: <Icons.pytorch className="size-12" /> },
   { name: 'Tailwind', icon: <Icons.tailwind className="size-12" /> },
   { name: 'React', icon: <Icons.react className="size-12" /> },
   { name: 'Angular', icon: <Icons.angular className="size-12" /> },
@@ -207,9 +207,11 @@ export const techData = [
   { name: 'Helm', icon: <Icons.helm className="size-12" /> },
   { name: 'AWS', icon: <Icons.aws className="size-12" /> },
   { name: 'GCP', icon: <Icons.gcp className="size-12" /> },
+  { name: 'GitLab', icon: <Icons.gitlab className="size-12" /> },
   { name: 'CI/CD', icon: <Icons.cicd className="size-12" /> },
   { name: 'JUnit', icon: <Icons.junit className="size-12" /> },
   { name: 'Terraform', icon: <Icons.terraform className="size-12" /> },
+  { name: 'Copilot', icon: <Icons.copilot className="size-12" /> },
 ] as const;
 
 export const awardsData = [

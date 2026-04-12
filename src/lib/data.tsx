@@ -162,7 +162,7 @@ export const experiencesData = [
     company: 'Sun Devil Rocketry @ ASU',
     bulletPoints: [
       'UNPAID Club Project',
-      'Developed embedded firmware for custom ARM Cortex-M7 microcontroller in C using HAL, including sensor and external flash drivers; enabled reliable data collection for two-stage rockets across 2 launches up to 4̃1,000 ft.',
+      'Developed embedded firmware for custom ARM Cortex-M7 microcontroller in C using HAL, including sensor and external flash drivers; enabled reliable data collection for two-stage rockets across 2 launches up to ~41,000 ft.',
       'Reduced CPU blocking 13× (1.3 ms →0.1 ms) by implementing non-blocking DMA.',
     ],
     period: '2024',

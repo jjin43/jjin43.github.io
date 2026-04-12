@@ -72,9 +72,10 @@ export const Intro = () => {
         }}
         className="text-muted-foreground max-w-xl text-sm sm:text-base"
       >
-        Welcome to my personal website/portfolio.I&#39;m passionate about
-        building modern web applications, cloud infrastrcture, and scalable
-        systems.
+        Welcome to my personal website/portfolio. I&#39;m passionate about
+        building modern web applications, scalable systems and ML training
+        pipelines. Additional interest and experience in embedded systems and
+        Web3 dApps.
       </motion.p>
       <motion.div
         initial={{ opacity: 0, y: 100 }}
